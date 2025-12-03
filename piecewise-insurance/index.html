@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piecewise Insurance | Commercial Coverage, Modular Protection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-mark" aria-hidden="true">
+      <span class="block block-one"></span>
+      <span class="block block-two"></span>
+      <span class="block block-three"></span>
+    </div>
+    <div class="brand">
+      <span class="brand-name">Piecewise Insurance</span>
+      <span class="brand-tag">Commercial coverage built in smart modules</span>
+    </div>
+    <nav class="nav-actions">
+      <a href="#services" class="ghost">What we cover</a>
+      <a href="#contact" class="primary">Start a quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Modular protection for modern businesses</p>
+        <h1>Every policy, every limit—fitted together with clarity.</h1>
+        <p class="lede">Piecewise Insurance is a brokerage specializing in commercial, general liability, and business owner insurance. We translate risk into simple building blocks so you can move with confidence.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#contact">Build my coverage</a>
+          <a class="ghost" href="#approach">See how we work</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="grid">
+          <span class="cell puzzle mustard"></span>
+          <span class="cell puzzle navy"></span>
+          <span class="cell circle teal"></span>
+          <span class="cell bar pine"></span>
+          <span class="cell shield mustard"></span>
+          <span class="cell chart brick"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars" id="approach">
+      <header>
+        <p class="eyebrow">Our approach</p>
+        <h2>Structured, transparent, and designed for decisions.</h2>
+        <p class="section-lede">We keep your coverage modular and understandable, pairing a disciplined review process with candid guidance on what matters most.</p>
+      </header>
+      <div class="pillars-grid">
+        <article class="card">
+          <div class="icon icon-grid"></div>
+          <h3>Clarity by design</h3>
+          <p>Plain-language summaries, coverage maps, and renewal calendars that remove the guesswork from insurance choices.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-puzzle"></div>
+          <h3>Modular coverage</h3>
+          <p>Combine general liability, property, cyber, and specialty lines into one plan tuned to your operations.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-shield"></div>
+          <h3>Trusted advocacy</h3>
+          <p>Direct access to brokers who negotiate diligently, manage claims, and keep your coverage evolving with your business.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <header>
+        <p class="eyebrow">What we cover</p>
+        <h2>Commercial coverage assembled in clean pieces.</h2>
+      </header>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-badge">Commercial Insurance</div>
+          <h3>Broad protection for operations</h3>
+          <p>Operational risk reviews, property schedules, fleet coverage, and tailored endorsements so every department is supported.</p>
+          <ul>
+            <li>Property and equipment schedules</li>
+            <li>Auto and fleet liability</li>
+            <li>Umbrella & excess layers</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <div class="service-badge">General Liability</div>
+          <h3>Confidence in every contract</h3>
+          <p>Certificate management, additional insureds, and clear limits that help you win bids without taking on hidden exposure.</p>
+          <ul>
+            <li>Contract review support</li>
+            <li>Occurrence & claims-made guidance</li>
+            <li>Product and completed ops expertise</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <div class="service-badge">Business Owners Policy</div>
+          <h3>Essential coverage in one smart bundle</h3>
+          <p>Concise protection for growing teams—property, liability, and business interruption aligned to your revenue reality.</p>
+          <ul>
+            <li>Business interruption modeling</li>
+            <li>Equipment breakdown</li>
+            <li>Cyber & crime add-ons</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div>
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Let’s assemble coverage that feels complete.</h2>
+          <p class="lede">Share your operations, growth plans, and existing policies. We’ll map the pieces, identify gaps, and deliver a plan that’s ready to quote.</p>
+        </div>
+        <a class="primary" href="#contact">Request a consultation</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <header>
+        <p class="eyebrow">Talk with Piecewise</p>
+        <h2>We respond within one business day.</h2>
+        <p class="section-lede">Tell us about your business and the coverage you need. We’ll prepare a clear next step—no jargon, no pressure.</p>
+      </header>
+      <form class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Alex Morgan" required />
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required />
+        </div>
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="business" placeholder="Piecewise Labs" />
+        </div>
+        <div class="field">
+          <label for="coverage">Coverage focus</label>
+          <select id="coverage" name="coverage">
+            <option>Commercial Insurance</option>
+            <option>General Liability</option>
+            <option>Business Owners Policy</option>
+            <option>Unsure – guide me</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Share your operations, contract requirements, and timelines."></textarea>
+        </div>
+        <button type="submit" class="primary">Submit request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <div class="logo-mark" aria-hidden="true">
+        <span class="block block-one"></span>
+        <span class="block block-two"></span>
+        <span class="block block-three"></span>
+      </div>
+      <div>
+        <p class="brand-name">Piecewise Insurance</p>
+        <p class="brand-tag">Commercial coverage, clearly assembled.</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#approach">Approach</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-meta">© <span id="year"></span> Piecewise Insurance Brokerage. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
