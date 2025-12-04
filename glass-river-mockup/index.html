@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial General Liability Coverage Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .document-viewer {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 60px;
+            background-color: #ffffff;
+        }
+
+        .document-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333333;
+        }
+
+        .document-content p {
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            background-color: #b3d9ff;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: #1a1a1a;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .highlight:hover {
+            background-color: #99ccff;
+        }
+
+        .sidebar {
+            width: 360px;
+            background-color: #f8f8f8;
+            border-left: 1px solid #e0e0e0;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .sidebar-input-container {
+            margin-top: auto;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .sidebar-input {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 13px;
+            border: 1px solid #d0d0d0;
+            border-radius: 4px;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .sidebar-input:focus {
+            border-color: #0066cc;
+        }
+
+        .sidebar-input::placeholder {
+            color: #999999;
+        }
+
+        .chips-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 12px;
+            background-color: #e8e8e8;
+            color: #555555;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .sidebar-header {
+            font-size: 13px;
+            font-weight: 600;
+            color: #666666;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .annotation {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .annotation:last-child {
+            border-bottom: none;
+        }
+
+        .annotation-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #0066cc;
+            margin-bottom: 8px;
+        }
+
+        .annotation-description {
+            font-size: 13px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        .section-header {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .subsection-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        /* Scrollbar styling */
+        .document-viewer::-webkit-scrollbar,
+        .sidebar-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .document-viewer::-webkit-scrollbar-track,
+        .sidebar-content::-webkit-scrollbar-track {
+            background: #f5f5f5;
+        }
+
+        .document-viewer::-webkit-scrollbar-thumb,
+        .sidebar-content::-webkit-scrollbar-thumb {
+            background: #d0d0d0;
+            border-radius: 5px;
+        }
+
+        .document-viewer::-webkit-scrollbar-thumb:hover,
+        .sidebar-content::-webkit-scrollbar-thumb:hover {
+            background: #b0b0b0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="document-viewer">
+            <div class="document-content">
+                <p><strong>COMMERCIAL GENERAL LIABILITY COVERAGE FORM</strong></p>
+                <p>Various provisions in this policy restrict coverage. Read the entire policy carefully to determine
+                    rights, duties and what is and is not covered.</p>
+                <p>Throughout this policy the words "you" and "your" refer to the Named Insured shown in the
+                    Declarations, and any other person or organization qualifying as a Named Insured under this policy.
+                    The words "we", "us" and "our" refer to the company providing this insurance.</p>
+                <p>The word "insured" means any person or organization qualifying as such under Section II – Who Is An
+                    Insured.</p>
+                <p>Other words and phrases that appear in quotation marks have special meaning. Refer to Section V –
+                    Definitions.</p>
+
+                <div class="section-header">SECTION I – COVERAGES</div>
+                <div class="subsection-header">COVERAGE A – BODILY INJURY AND PROPERTY DAMAGE LIABILITY</div>
+
+                <div class="subsection-header">1. Insuring Agreement</div>
+
+                <p><strong>a.</strong> <span class="highlight" data-annotation="insuring-agreement">We will pay those
+                        sums that the insured becomes legally obligated to pay as damages because of "bodily injury" or
+                        "property damage" to which this insurance applies. We will have the right and duty to defend the
+                        insured against any "suit" seeking those damages. However, we will have no duty to defend the
+                        insured against any "suit" seeking damages for "bodily injury" or "property damage" to which
+                        this insurance does not apply. We may, at our discretion, investigate any "occurrence" and
+                        settle any claim or "suit" that may result.</span> But:</p>
+                <p>(1) The amount we will pay for damages is limited as described in Section III – Limits Of Insurance;
+                    and</p>
+                <p>(2) Our right and duty to defend ends when we have used up the applicable limit of insurance in the
+                    payment of judgments or settlements under Coverages A or B or medical expenses under Coverage C.</p>
+                <p>No other obligation or liability to pay sums or perform acts or services is covered unless explicitly
+                    provided for under Supplementary Payments – Coverages A and B.</p>
+
+                <p><strong>b.</strong> This insurance applies to "bodily injury" and "property damage" only if:</p>
+                <p>(1) The "bodily injury" or "property damage" is caused by an "occurrence" that takes place in the
+                    "coverage territory";</p>
+                <p>(2) The "bodily injury" or "property damage" occurs during the policy period; and</p>
+                <p>(3) Prior to the policy period, no insured listed under Paragraph 1. of Section II – Who Is An
+                    Insured and no "employee" authorized by you to give or receive notice of an "occurrence" or claim,
+                    knew that the "bodily injury" or "property damage" had occurred, in whole or in part. If such a
+                    listed insured or authorized "employee" knew, prior to the policy period, that the "bodily injury"
+                    or "property damage" occurred, then any continuation, change or resumption of such "bodily injury"
+                    or "property damage" during or after the policy period will be deemed to have been known prior to
+                    the policy period.</p>
+
+                <p><strong>c.</strong> "Bodily injury" or "property damage" which occurs during the policy period and
+                    was not, prior to the policy period, known to have occurred by any insured listed under Paragraph 1.
+                    of Section II – Who Is An Insured or any "employee" authorized by you to give or receive notice of
+                    an "occurrence" or claim, includes any continuation, change or resumption of that "bodily injury" or
+                    "property damage" after the end of the policy period.</p>
+
+                <p><strong>d.</strong> "Bodily injury" or "property damage" will be deemed to have been known to have
+                    occurred at the earliest time when any insured listed under Paragraph 1. of Section II – Who Is An
+                    Insured or any "employee" authorized by you to give or receive notice of an "occurrence" or claim:
+                </p>
+                <p>(1) Reports all, or any part, of the "bodily injury" or "property damage" to us or any other insurer;
+                </p>
+                <p>(2) Receives a written or verbal demand or claim for damages because of the "bodily injury" or
+                    "property damage"; or</p>
+                <p>(3) Becomes aware by any other means that "bodily injury" or "property damage" has occurred or has
+                    begun to occur.</p>
+
+                <p><strong>e.</strong> Damages because of "bodily injury" include damages claimed by any person or
+                    organization for care, loss of services or death resulting at any time from the "bodily injury".</p>
+                <p>CG 00 01 04 13 © Insurance Services Office, Inc., 2012 Page 1 of 16</p>
+
+                <div class="subsection-header">2. Exclusions</div>
+                <p>This insurance does not apply to:</p>
+
+                <p><strong>a. Expected Or Intended Injury</strong></p>
+                <p>"Bodily injury" or "property damage" expected or intended from the standpoint of the insured. This
+                    exclusion does not apply to "bodily injury" resulting from the use of reasonable force to protect
+                    persons or property.</p>
+
+                <p><strong>b. Contractual Liability</strong></p>
+                <p>"Bodily injury" or "property damage" for which the insured is obligated to pay damages by reason of
+                    the assumption of liability in a contract or agreement. This exclusion does not apply to liability
+                    for damages:</p>
+                <p>(1) That the insured would have in the absence of the contract or agreement; or</p>
+                <p>(2) Assumed in a contract or agreement that is an "insured contract", provided the "bodily injury" or
+                    "property damage" occurs subsequent to the execution of the contract or agreement. Solely for the
+                    purposes of liability assumed in an "insured contract", reasonable attorneys' fees and necessary
+                    litigation expenses incurred by or for a party other than an insured are deemed to be damages
+                    because of "bodily injury" or "property damage", provided:</p>
+                <p>(a) Liability to such party for, or for the cost of, that party's defense has also been assumed in
+                    the same "insured contract"; and</p>
+                <p>(b) Such attorneys' fees and litigation expenses are for defense of that party against a civil or
+                    alternative dispute resolution proceeding in which damages to which this insurance applies are
+                    alleged.</p>
+
+                <p><strong>c. Liquor Liability</strong></p>
+                <p>"Bodily injury" or "property damage" for which any insured may be held liable by reason of:</p>
+                <p>(1) Causing or contributing to the intoxication of any person;</p>
+                <p>(2) The furnishing of alcoholic beverages to a person under the legal drinking age or under the
+                    influence of alcohol; or</p>
+                <p>(3) Any statute, ordinance or regulation relating to the sale, gift, distribution or use of alcoholic
+                    beverages.</p>
+                <p>This exclusion applies even if the claims allege negligence or other wrongdoing in:</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-header">Annotations</div>
+
+                <div class="annotation" id="insuring-agreement">
+                    <div class="annotation-title">Insuring Agreement</div>
+                    <div class="annotation-description">
+                        This is the core coverage provision of the policy. It establishes that the insurer will pay
+                        damages
+                        the insured becomes legally obligated to pay for bodily injury or property damage, and
+                        importantly,
+                        the insurer has both the right and duty to defend the insured against suits seeking such
+                        damages.
+                        The defense duty is a key benefit, as legal defense costs can be substantial even if the claim
+                        is
+                        ultimately unsuccessful.
+                    </div>
+                    <div class="chips-container">
+                        <span class="chip">Coverage</span>
+                        <span class="chip">Defense Duty</span>
+                        <span class="chip">Legal Obligation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-input-container">
+                <input type="text" class="sidebar-input" placeholder="Add a note or question...">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Highlight interaction - could be extended for multiple highlights
+        document.querySelectorAll('.highlight').forEach(highlight => {
+            highlight.addEventListener('click', function () {
+                const annotationId = this.getAttribute('data-annotation');
+                const annotation = document.getElementById(annotationId);
+                if (annotation) {
+                    annotation.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

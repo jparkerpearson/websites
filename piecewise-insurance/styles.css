@@ -188,7 +188,7 @@ nav a:hover {
 /* Abstract shapes for hero image placeholder/decoration */
 .hero-shape {
     width: 100%;
-    height: 250px;
+    height: 400px;
     background-color: var(--green);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     opacity: 0.9;
