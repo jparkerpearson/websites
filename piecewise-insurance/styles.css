@@ -62,7 +62,7 @@ header {
 }
 
 .logo {
-    height: 80px;
+    height: 60px;
     /* Adjust based on actual logo aspect ratio */
     width: auto;
 }
@@ -268,6 +268,12 @@ nav a:hover {
     color: var(--white);
 }
 
+.feature-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
 .feature-card:nth-child(2) .feature-icon {
     background-color: var(--green);
 }
@@ -276,43 +282,17 @@ nav a:hover {
     background-color: var(--orange);
 }
 
+.feature-card:nth-child(4) .feature-icon {
+    background-color: var(--blue);
+}
+
 .feature-card h3 {
     font-size: 1.5rem;
     color: var(--blue);
     margin-bottom: 1rem;
 }
 
-/* CTA Section */
-.cta-section {
-    padding: 6rem 0;
-    text-align: center;
-    background-color: var(--blue);
-    color: var(--white);
-    margin-top: 4rem;
-    border-radius: 2rem;
-    margin-bottom: 4rem;
-}
 
-.cta-section h2 {
-    color: var(--white);
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.cta-section p {
-    font-size: 1.25rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
-}
-
-.cta-section .btn-primary {
-    background-color: var(--yellow);
-    color: var(--blue);
-}
-
-.cta-section .btn-primary:hover {
-    background-color: #f0b040;
-}
 
 /* Footer */
 footer {
@@ -363,4 +343,96 @@ footer {
     .hero-content h1 {
         font-size: 3rem;
     }
+}
+
+/* Industry Section */
+.industry-section {
+    padding: 6rem 0;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.industry-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--blue);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+/* Quote Section */
+.quote-section {
+    padding: 6rem 0;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.quote-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quote-section .section-header h2 {
+    color: var(--white);
+}
+
+.quote-section .section-header p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.quote-form {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 0.5rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--orange);
+}
+
+.quote-form button {
+    width: 100%;
+    margin-top: 1rem;
 }

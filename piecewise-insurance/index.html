@@ -35,7 +35,7 @@
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1>Insurance built for your business.</h1>
+          <h1>Insurance that fits your business.</h1>
           <p>Get the coverage and peace of mind you deserve.</p>
           <div class="hero-buttons">
             <a href="#" class="btn btn-primary">Start Your Quote</a>
@@ -53,48 +53,113 @@
   <section class="features">
     <div class="container">
       <div class="section-header">
-        <h2>Why Choose Piecewise?</h2>
-        <p>We're rebuilding insurance from the ground up.</p>
+        <h2>Why Businesses Choose Piecewise</h2>
+        <p>Reliable protection designed to help your company thrive.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">✓</div>
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+            </svg>
+          </div>
           <h3>Tailored Coverage</h3>
-          <p>Select only the protection you need. Our modular plans let you build a policy that fits your lifestyle
-            perfectly.</p>
+          <p>Select only the protection you need. Our modular plans let you build a policy that fits your business.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Instant Claims</h3>
-          <p>File claims in minutes through our app. Our AI-driven process approves most standard claims instantly.</p>
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
+            </svg>
+          </div>
+          <h3>Industry Expertise</h3>
+          <p>We understand the unique challenges of your sector and provide specialized solutions.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">♥</div>
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M11 15H6l7-12v8h5l-7 12z" />
+            </svg>
+          </div>
+          <h3>Fast Quotes</h3>
+          <p>Get a quote in minutes, not days. Our streamlined process gets you covered quickly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+          </div>
           <h3>Human Support</h3>
-          <p>Need help? Our dedicated team of experts is just a chat or call away, 24/7. No robots, just people.</p>
+          <p>Need help? Our dedicated team of experts is just a chat or call away.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="container">
-    <section class="cta-section">
-      <h2>Ready to get covered?</h2>
-      <p>Join thousands of happy customers who switched to Piecewise.</p>
-      <a href="#" class="btn btn-primary">Get Your Free Quote</a>
-    </section>
+  <section class="industry-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>All of your business needs</h2>
+        <p>Comprehensive coverage for every business need.</p>
+      </div>
+      <div class="industry-grid">
+        <div class="industry-card">General Liability</div>
+        <div class="industry-card">Professional Liability</div>
+        <div class="industry-card">Commercial Property</div>
+        <div class="industry-card">Commercial Auto</div>
+        <div class="industry-card">Cyber Insurance</div>
+        <div class="industry-card">Umbrella Insurance</div>
+      </div>
+    </div>
+  </section>
 
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote-container">
+        <div class="section-header">
+          <h2>Ready to get covered?</h2>
+          <p>Join thousands of happy customers who switched to Piecewise. See how much you can save in minutes.</p>
+        </div>
+        <form class="quote-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+          </div>
+          <div class="form-group">
+            <label for="insurance-type">Type of Insurance</label>
+            <select id="insurance-type" name="insurance-type">
+              <option value="">Select Coverage...</option>
+              <option value="general-liability">General Liability</option>
+              <option value="workers-comp">Workers' Compensation</option>
+              <option value="professional-liability">Professional Liability</option>
+              <option value="commercial-auto">Commercial Auto</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Get Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
     <footer>
       <div class="footer-content">
         <img src="logo.png" alt="Piecewise Insurance Logo" class="logo" style="height: 40px;">
         <div class="footer-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
-          <a href="#">Contact</a>
         </div>
       </div>
       <div class="copyright">
-        &copy; 2024 Piecewise Insurance. All rights reserved.
+        &copy; 2025 Piecewise Insurance. All rights reserved.
       </div>
     </footer>
   </div>
