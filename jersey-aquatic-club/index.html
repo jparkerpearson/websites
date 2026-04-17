@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jersey Aquatic Club</title>
+    <style>
+      :root {
+        --navy: #0f2f4c;
+        --teal: #55cbb8;
+        --teal-dark: #32b8a3;
+        --muted: #56657a;
+        --light-bg: #f3f6f7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: var(--navy);
+        background: #fff;
+      }
+
+      .container {
+        width: min(1120px, 92vw);
+        margin: 0 auto;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 730px;
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.9) 45%, rgba(255, 255, 255, 0.2) 64%),
+          url("https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=1800&q=80") center right / cover no-repeat;
+      }
+
+      .hero-inner {
+        padding: 72px 0 100px;
+        max-width: 560px;
+      }
+
+      .logo-mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+
+      .wave {
+        width: 68px;
+        height: 40px;
+        border-radius: 50% 60% 50% 50%;
+        background: radial-gradient(circle at 30% 45%, var(--navy) 0 38%, transparent 39%),
+          radial-gradient(circle at 62% 62%, var(--teal) 0 34%, transparent 35%),
+          linear-gradient(150deg, #fff0 18%, var(--navy) 18% 39%, #fff0 39%),
+          linear-gradient(150deg, #fff0 56%, var(--teal) 56% 74%, #fff0 74%);
+      }
+
+      .logo-copy h1 {
+        margin: 0;
+        letter-spacing: 1.2px;
+        font-size: 2rem;
+      }
+
+      .logo-copy p {
+        margin: 0;
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+        color: var(--teal-dark);
+        font-weight: 700;
+      }
+
+      .hero h2 {
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 5rem);
+        line-height: 0.95;
+      }
+
+      .hero h2 .teal {
+        color: var(--teal-dark);
+      }
+
+      .hero .tagline {
+        margin-top: 28px;
+        font-size: clamp(1.35rem, 2.7vw, 2rem);
+        line-height: 1.3;
+        font-weight: 700;
+      }
+
+      .hero .subcopy {
+        margin-top: 20px;
+        font-size: 1.72rem;
+        line-height: 1.5;
+        color: var(--muted);
+        max-width: 96%;
+      }
+
+      .btn-row {
+        display: flex;
+        gap: 18px;
+        margin-top: 32px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        border-radius: 999px;
+        border: 2px solid #4f6378;
+        padding: 15px 36px;
+        font-size: 1.13rem;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: var(--navy);
+        background: #fff;
+        text-decoration: none;
+      }
+
+      .btn.primary {
+        border-color: transparent;
+        background: #78d8c8;
+      }
+
+      .curve {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 130px;
+        background: #fff;
+        clip-path: ellipse(75% 100% at 50% 100%);
+      }
+
+      .section {
+        padding: 52px 0;
+      }
+
+      .section h3 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.95rem;
+        letter-spacing: 1.8px;
+        color: var(--teal-dark);
+      }
+
+      .section h4 {
+        margin: 8px 0 36px;
+        text-align: center;
+        font-size: clamp(2rem, 4.8vw, 3.4rem);
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .feature {
+        text-align: center;
+        padding: 16px 20px 6px;
+      }
+
+      .icon {
+        width: 122px;
+        height: 122px;
+        border-radius: 50%;
+        margin: 0 auto 16px;
+        background: #e7f4f2;
+        display: grid;
+        place-items: center;
+        font-size: 3rem;
+      }
+
+      .feature h5 {
+        margin: 0 0 8px;
+        font-size: 2.2rem;
+      }
+
+      .feature p {
+        margin: 0;
+        font-size: 1.55rem;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+
+      .training {
+        background: var(--light-bg);
+        padding-bottom: 68px;
+      }
+
+      .progress-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      .progress-step {
+        background: #fff;
+        border-radius: 20px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+
+      .progress-step .icon {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 12px;
+      }
+
+      .progress-step h5 {
+        margin: 0;
+        font-size: 1.35rem;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+      }
+
+      .progress-step p {
+        margin: 8px 0 0;
+        font-size: 1.25rem;
+        color: var(--muted);
+      }
+
+      .gallery {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: 1.2fr 1.2fr 1fr;
+        gap: 18px;
+      }
+
+      .gallery img,
+      .quote {
+        width: 100%;
+        border-radius: 22px;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .quote {
+        background: #ddf2ee;
+        padding: 24px;
+        color: #25425b;
+      }
+
+      .quote .mark {
+        font-size: 5rem;
+        line-height: 0.8;
+        color: var(--teal-dark);
+      }
+
+      .quote p {
+        margin: 6px 0 10px;
+        font-size: 1.55rem;
+        line-height: 1.5;
+      }
+
+      .quote span {
+        display: block;
+        font-size: 1rem;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #3ab59f;
+        font-weight: 700;
+      }
+
+      @media (max-width: 1000px) {
+        html {
+          font-size: 12px;
+        }
+        .card-grid,
+        .progress-grid,
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          background-position: center;
+          min-height: auto;
+        }
+        .hero-inner {
+          padding-bottom: 130px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero-inner">
+        <div class="logo-mark">
+          <div class="wave" aria-hidden="true"></div>
+          <div class="logo-copy">
+            <h1>JERSEY AQUATIC</h1>
+            <p>SWIM SCHOOL</p>
+          </div>
+        </div>
+
+        <h2>
+          Train Like<br />
+          a <span class="teal">Swimmer.</span>
+        </h2>
+        <p class="tagline">Real technique. Stronger swimmers. Ready for competition.</p>
+        <p class="subcopy">
+          We teach kids the skills, discipline, and confidence to succeed in the pool and beyond.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn primary" href="#">View Programs</a>
+          <a class="btn" href="#">Book an Evaluation</a>
+        </div>
+      </div>
+      <div class="curve" aria-hidden="true"></div>
+    </header>
+
+    <section class="section container">
+      <h3>WHAT MAKES US DIFFERENT?</h3>
+      <h4>More Than Lessons. Real Progress.</h4>
+      <div class="card-grid">
+        <article class="feature">
+          <div class="icon">🥽</div>
+          <h5>Technique First</h5>
+          <p>Proper form from day one builds faster, stronger swimmers.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">⏱️</div>
+          <h5>Built for Competition</h5>
+          <p>We develop the skills and mindset to race.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">🏆</div>
+          <h5>Measurable Progress</h5>
+          <p>Clear levels, real goals, and swimmers you can see improving.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="training section">
+      <div class="container">
+        <h3>OUR TRAINING PROGRESSION</h3>
+        <h4>From First Stroke to Race Ready.</h4>
+
+        <div class="progress-grid">
+          <article class="progress-step">
+            <div class="icon">🧿</div>
+            <h5 style="color: #46c7b3">Foundations</h5>
+            <p>Build confidence &amp; water skills</p>
+          </article>
+          <article class="progress-step">
+            <div class="icon" style="background: #e6f2f8">🏊</div>
+            <h5 style="color: #4ea3cb">Stroke Development</h5>
+            <p>Master technique &amp; efficiency</p>
+          </article>
+          <article class="progress-step">
+            <div class="icon" style="background: #f8efdf">🥤</div>
+            <h5 style="color: #f5864b">Endurance Training</h5>
+            <p>Build strength, speed &amp; stamina</p>
+          </article>
+          <article class="progress-step">
+            <div class="icon" style="background: #ece7fb">🏁</div>
+            <h5 style="color: #6a5cd4">Race Prep</h5>
+            <p>Sharpen skills &amp; compete</p>
+          </article>
+        </div>
+
+        <div class="gallery">
+          <img
+            src="https://images.unsplash.com/photo-1560090995-01632a28895b?auto=format&fit=crop&w=1000&q=80"
+            alt="Swimmer training in lane"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1000&q=80"
+            alt="Youth swim team smiling at pool edge"
+          />
+          <aside class="quote">
+            <div class="mark">“</div>
+            <p>
+              The coaches focus on technique and push the kids in the best way. We've seen huge progress and our swimmer loves it.
+            </p>
+            <span>Jersey Aquatic Parent</span>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
